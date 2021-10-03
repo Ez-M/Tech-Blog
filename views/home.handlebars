@@ -1,0 +1,62 @@
+<figure class="background">
+
+
+    <div class="row">
+        <div class="login card text-center justify-content-around border-success" style="width: 30rem; margin: 0 auto">
+            <div class="card-body">
+
+                {{#if loggedIn}}
+
+                <section id="search" class="search-wrap">
+                    <h3>Write a new post!</h3>
+                    <form action="/api/posts/new" method="POST">
+                        <div class="input-group">
+                            <label for="title">Title</label>
+                            <input type="text" name="post_name" id="title" class="input-box"
+                                placeholder="Title" maxlength="100"
+                                value={{title}}>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="description">Body</label>
+                            <textarea name="description" id="description" class="input-box"
+                                placeholder="Body" rows="10" value={{description}}></textarea>
+                        </div>
+
+                        <input type="submit" class="btn btn-reverse">
+                    </form>
+                </section>
+
+                {{else}}
+
+                <h5 class="card-title">User Login</h5>
+                    <form action="/api/user/login" method="POST">
+                        <div class="input-group">
+                            <label for="title">User Email</label>
+                            <input type="text" name="emailLogin" id="title" class="input-box"
+                                placeholder="email" maxlength="100">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="description">User password</label>
+                            <input type="text" name="passwordLogin" id="title" class="input-box"
+                                placeholder="password" maxlength="100">
+                        </div>
+
+                        <input type="submit" class="btn btn-reverse">
+                    </form>
+
+                {{/if}}
+
+
+            </div>
+        </div>
+</figure>
+
+{{#if loggedIn}}
+
+{{!--
+<script src="/js/homepagesearch.js"></script> --}}
+{{else}}
+<script src="/js/login.js"></script>
+{{/if}}
