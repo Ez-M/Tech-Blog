@@ -7,7 +7,7 @@ const sequelize = require('../config/connection');
 class Post extends Model {}
 
 // set up fields and rules for post model
-post.init(
+Post.init(
 {
     // define columns
   

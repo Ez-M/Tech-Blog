@@ -1,0 +1,126 @@
+/* html {
+    overflow-y: hidden;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap');
+
+*{
+  font-family:'Montserrat';
+  box-sizing: border-box;
+
+}
+
+body{
+  background: black;
+  padding-top: 1%;
+}
+.background {
+  background: url(../images/farm1.jpeg) no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background: #283618;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+
+}
+li {
+  margin: 0 1rem;
+}
+/* header.inner {
+  border-bottom: 4px solid rgb(255, 255, 255);
+  position: relative;
+  box-shadow: grey;
+} */
+
+.welcome-statement {
+  margin-top: 3%;
+  text-align: center;
+}
+
+#welcome {
+  font-size: 45px;
+  color: #bc6c25;
+
+}
+
+
+#buy-sell {
+  font-size: 30px;
+  color: #bc6c25;
+
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #606c38;
+}
+
+.form-wrap {
+  margin: auto;
+  background:#081c15;
+  color: #fff;
+  padding: 1rem 3rem 3rem;
+  margin-top: 5rem;
+}
+
+.form-wrap.reg-form,
+.form-wrap.login-form {
+  width: 60%;
+}
+
+.form-wrap h1,
+.form-wrap h2,
+.form-wrap p {
+  text-align: center;
+}
+
+.form-wrap .btn {
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-box {
+  padding: 0.5rem;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+#saleitems {
+  padding: 5%;
+  color: white;
+}
+
+.btn-reverse {
+  background-color: aqua;
+}
+
+
+.gig {
+  background-color: rgb(133, 93, 34);
+}
