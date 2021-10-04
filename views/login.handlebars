@@ -1,0 +1,36 @@
+<figure class="background">
+
+  {{!-- <header>
+    <h1 class="header">Create a new account</h1>
+    <h2 class="welcome">We are so exited to have you !!!</h2>
+  </header> --}}
+
+  <div class="row">
+    <div class="login card text-center justify-content-center border-success mt-5 d-flex"
+      style="width: 40rem; margin: 0 auto">
+      <div class="card-body">
+                    <form action="/api/user/" method="POST" class= "login-card">
+                        <div class="input-group">
+                            <label for="description">Username</label>
+                            <input type="text" name="userName" id="title" class="input-box"
+                                placeholder="userName" maxlength="100">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="description">email</label>
+                            <input type="text" name="email" id="title" class="input-box"
+                                placeholder="email" maxlength="100">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="description">User password</label>
+                            <input type="text" name="password" id="title" class="input-box"
+                                placeholder="password" maxlength="100">
+                        </div>
+
+                        <input type="submit" class="btn btn-reverse">
+                    </form>
+    </div>
+  </div>
+</figure>
+{{!-- <script src="../public/js/newuser.js"></script> --}}

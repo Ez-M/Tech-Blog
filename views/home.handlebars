@@ -11,14 +11,14 @@
                     <h3>Write a new post!</h3>
                     <form action="/api/posts/new" method="POST">
                         <div class="input-group">
-                            <label for="title">Title</label>
+                            <span class="input-group-text mb-1 inputGroup-sizing-sm" >Title </span>
                             <input type="text" name="post_name" id="title" class="input-box"
                                 placeholder="Title" maxlength="100"
                                 value={{title}}>
                         </div>
 
                         <div class="input-group">
-                            <label for="description">Body</label>
+                            <span class="input-group-text mb-1 inputGroup-sizing-sm" >Body</span>
                             <textarea name="description" id="description" class="input-box"
                                 placeholder="Body" rows="10" value={{description}}></textarea>
                         </div>
@@ -30,7 +30,7 @@
                 {{else}}
 
                 <h5 class="card-title">User Login</h5>
-                    <form action="/api/user/login" method="POST">
+                    <form action="/api/user/login" method="POST" class= "login-card">
                         <div class="input-group">
                             <label for="title">User Email</label>
                             <input type="text" name="emailLogin" id="title" class="input-box"
@@ -58,5 +58,5 @@
 {{!--
 <script src="/js/homepagesearch.js"></script> --}}
 {{else}}
-<script src="/js/login.js"></script>
+{{!-- <script src="/js/login.js"></script> --}}
 {{/if}}
