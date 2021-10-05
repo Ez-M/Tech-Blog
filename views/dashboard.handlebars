@@ -1,0 +1,24 @@
+<section id="saleitems" class="container">
+    <h1>All Posts</h1>
+
+    {{#each posts as |posts|}}
+     
+    <div class="gig">
+      <a href= "/api/listings/product/"+{{id}}><h3>{{product_name}}</h3></a>
+      <p>{{description}}</p>
+      <p> {{stock}} {{unit}} available at {{price}} each</p>
+      
+    </div>
+
+
+
+</script>
+    {{else}}
+
+    <p>No posts available</p>
+
+    {{/each}}
+
+   
+   
+  </section>
