@@ -1,21 +1,15 @@
 <section id="saleitems" class="container">
     <h1>All Posts</h1>
 
-    {{#each posts as |posts|}}
+    {{#each posts as |post|}}
      
     <div class="gig">
-      <a href= "/api/listings/product/"+{{id}}><h3>{{product_name}}</h3></a>
-      <p>{{description}}</p>
-      <p> {{stock}} {{unit}} available at {{price}} each</p>
-      
+      <a href= {{post_link post.id}}><h3>{{post.post_name}}</h3></a>
+      <p>posted on {{post.date_created}}</p>
+      <p>{{post.description}}</p>
+     
     </div>
 
-
-
-</script>
-    {{else}}
-
-    <p>No posts available</p>
 
     {{/each}}
 
