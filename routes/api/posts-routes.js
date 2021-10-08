@@ -15,8 +15,8 @@ const router = require('express').Router();
                     user_id: req.session.userid
                     });
                     
-                    res.status(200).json(dbPostData);
-                    // res.redirect("/")
+                    // res.status(200).json(dbPostData);
+                    res.redirect("back")
                   }
         
                   catch (err) {
@@ -40,8 +40,8 @@ const router = require('express').Router();
                         post_id: req.session.postid,
                         });
                         
-                        res.status(200).json(dbPostData);
-                        // res.redirect("/")
+                        // res.status(200).json(dbPostData);
+                        res.redirect("back")
                       }
             
                       catch (err) {
