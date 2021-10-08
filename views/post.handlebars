@@ -1,17 +1,27 @@
 <section id="saleitems" class="container">
     <h1>{{post.post_name}}</h1>
-    <h3>By {{user.user_name}}</h3>
+    <h3>By {{post.user.user_name}}</h3>
 
 
     <p>{{post.description}}</p>
 
 
+<form action="/api/posts/comment" method="POST">
+                        <div class="input-group">
 
- {{#each comments as |comments|}}
+                            <textarea name="description" id="description" class="input-box"
+                                placeholder="Comment..." rows="10" value={{description}}></textarea>
+                        </div>
+
+                        <input type="submit" class="btn btn-reverse">
+                    </form>
+
+
+
+ {{#each post.comments as |comment|}}
 
      
     <div class="gig">
-      <h3>{{comment.comment_name}}</h3>
       <p>{{comment.description}}</p>
       
     </div>

@@ -45,12 +45,12 @@ router.get('/dashboard', async (req, res) => {
         })
 
         const posts = dbPostData.map( data => data.get({ plain: true}));
-            // res.render('dashboard', {
-            //     posts,
-            //     loggedIn: req.session.loggedIn,
-            //     id: req.session.userid
-            // });
-            res.json(posts);
+            res.render('dashboard', {
+                posts,
+                loggedIn: req.session.loggedIn,
+                id: req.session.userid
+            });
+            // res.json(posts);
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
