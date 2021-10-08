@@ -1,6 +1,6 @@
-const User = require('/user');
-const Post = require('/post');
-const Comment = require('/comment');
+const User = require('./user');
+const Post = require('./Post');
+const Comment = require('./Comment');
 
 // Each post can only belong to one user
 Post.belongsTo(User, {
